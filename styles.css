@@ -3,7 +3,10 @@ body {
 	  color: #A9B1D6;
 
 	  font-family: 'Inter', sans-serif;
-	  margin: 200px;
+	  display: block;
+	  width: 75%;
+	  margin: auto;
+	  margin-top: min(20vh, 100px);
 }
 
 h1 {
@@ -34,8 +37,8 @@ a:hover {
 	  font-weight: bold;
 
 	  background: 
-		  linear-gradient(-45deg, transparent calc(100% / 3), #DB4B4BCC, transparent calc(200% / 3)) 
-		  bottom right/350% 100% no-repeat;
+	  linear-gradient(-45deg, transparent calc(100% / 3), #DB4B4BCC, transparent calc(200% / 3)) 
+	  bottom right/350% 100% no-repeat;
 	  transition: 0.5s linear;
 }
 
@@ -48,11 +51,28 @@ a:hover {
 	  font-weight: bold;
 
 	  background: 
-		  linear-gradient(-45deg, transparent calc(100% / 3), #849AA4CC, transparent calc(200% / 3)) 
-		  bottom right/350% 100% no-repeat;
+	  linear-gradient(-45deg, transparent calc(100% / 3), #849AA4CC, transparent calc(200% / 3)) 
+	  bottom right/350% 100% no-repeat;
 	  transition: 0.5s linear;
 }
 
 .flair-silver:hover {
 	  background-position: bottom left;
+}
+
+@media (max-width: 750px) {
+	  body {
+		  margin: 5em;
+	  }
+
+	  p {
+		  width: unset;
+		  margin: none;
+	  }
+}
+
+@media (max-width: 550px) {
+	  h1 {
+		  font-size: 2rem;
+	  }
 }
